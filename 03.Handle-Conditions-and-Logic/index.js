@@ -159,8 +159,8 @@
 // console.log(fullName)
 
 // Shorthand
-var name = ''
-var fullName = ''
+// var name = ''
+// var fullName = ''
 
-var fullName = name || 'mh shuvo'
-console.log(fullName)
+// var fullName = name || 'mh shuvo'
+// console.log(fullName)
