@@ -87,15 +87,38 @@
 
 
 // 06.Reverse Array Elements Completely
-var arr = [1, 2, 3, 4, 5]
+// var arr = [1, 2, 3, 4, 5]
 
-for (var i = 0; i < arr.length / 2; i++) {
-    console.log(arr[i])
-    var temp = arr[i]
-    arr[i] = arr[arr.length - 1 - i]
-    console.log(arr[i])
-    arr[arr.length - 1 - i] = temp
-}
-console.log(arr)
+// for (var i = 0; i < arr.length / 2; i++) {
+//     // console.log(arr[i])
+//     var temp = arr[i]
+//     arr[i] = arr[arr.length - 1 - i]
+//     // console.log(arr[i])
+//     arr[arr.length - 1 - i] = temp
+// }
+// console.log(arr)
 
-console.log(arr.reverse())
+// console.log(arr.reverse())
+
+
+
+// 07. Array Methods Provided
+// array is a mutable object
+// var arr = [1, 2, 3, 4, 5]
+// var arr2 = [3, 5, 9, 1, 5]
+// console.log(arr.join(', '))
+// arr.fill(true)
+// console.log(arr)
+// var arr3 = arr.concat(arr2)
+// console.log(arr3)
+// console.log(Array.isArray(arr))
+
+// var newArray = arr
+// arr[5] = 6
+// console.log(newArray)
+// console.log(arr)
+
+// var newArray = Array.from(arr)
+// newArray[5] = 6
+// console.log(newArray)
+// console.log(arr)

@@ -108,14 +108,14 @@
 
 
 // 06. Function Expressions
-// var addition = function(name, email) {
+// var addition = function(name, email) { also called anonimous function
 //     return {
 //         name: name,
 //         email: email
 //     }
 // }
-// var anathor = addition
-// console.log(anathor('mh shuvo', 'mhs@gmail.com'))
+// // var another = addition
+// console.log(addition('mh shuvo', 'mhs@gmail.com'))
 
 
 
@@ -124,6 +124,7 @@
 // function something(greet, name) {
 //     function getFirstName() {
 //         if(name) {
+//             console.log(name.split(' ')[0])
 //             return name.split(' ')[0]
 //         } else {
 //             return ''

@@ -103,9 +103,10 @@
 
 // 08. Null and undefined
 // var nul = null // null is special type used as a abstract of an object
-// var xyz = 'hi'
-// console.log(xyz)
-// console.log(nul, xyz)
+// var un = undefined
+// // var xyz = 'hi'
+// // console.log(xyz)
+// console.log(nul, un)
 
 
 
@@ -151,75 +152,6 @@
 
 
 
-// 11. All Operators 
-// Arithmetic operator
-// + - * / % ++ -- 
-
-// modulus operator/ remainder operator
-// var a = 11
-// var b = 3
-// console.log(a % b) 
-
-// pre incremental, post incremental, pre decremental, post decremental
-// console.log(++a)
-// console.log(a)
-// console.log(a++) // a = a + 1
-// console.log(a)
-// // same behaviour of decremental
-
-// Assignment operators
-// a += b // a = a + b
-// console.log(a)
-
-// a -=b
-// console.log(a)
-
-// a *=b
-// console.log(a)
-
-// a /=b
-// console.log(a)
-
-// Comparison operators
-// var a = 11
-// var b = 3
-// console.log(a == b)
-// console.log(a != b)
-// console.log(a > b)
-// console.log(a < b)
-// console.log(a <= b)
-// console.log(a >= b)
-
-// var a = 11
-// var b = '11'
-// console.log(a == b)
-// console.log(a === b) // check type also
-
-// Logical operators
-// &&, ||, !
-
-// Bitwise Operators (It is return bianry value)
-// &, |, ~, ^, <<, >>
-// Bitwise AND
-// console.log(0 & 0)
-// console.log(0 & 1)
-// console.log(1 & 0)
-// console.log(1 & 1)
-
-// Bitwise OR
-// console.log(0 | 0)
-// console.log(0 | 1)
-// console.log(1 | 0)
-// console.log(1 | 1)
-
-// Bitwise XOR
-// console.log(0 ^ 0)
-// console.log(0 ^ 1)
-// console.log(1 ^ 0)
-// console.log(1 ^ 1)
-
-
-
 // 12. Math Functions Provided by Javascript
 // console.log(Math.E)
 // console.log(Math.PI)
@@ -240,14 +172,14 @@
 
 
 // 13. Date Functions
-var date = new Date()
-console.log(date)
-console.log(date.toDateString())
-console.log(date.toTimeString())
-console.log(date.toLocaleString())
-console.log(date.getFullYear())
-console.log(date.getMonth())
-console.log(date.getDate())
-console.log(date.getHours())
-console.log(date.getMinutes())
-console.log(date.getSeconds())
+// var date = new Date()
+// console.log(date)
+// console.log(date.toDateString())
+// console.log(date.toTimeString())
+// console.log(date.toLocaleString())
+// console.log(date.getFullYear())
+// console.log(date.getMonth())
+// console.log(date.getDate())
+// console.log(date.getHours())
+// console.log(date.getMinutes())
+// console.log(date.getSeconds())
