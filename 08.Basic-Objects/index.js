@@ -66,7 +66,8 @@
 // }
 // delete obj1['a']
 // console.log(obj1)
-
+// console.log(delete obj1.b)
+// console.log(obj1)
 
 
 // 05.Compare Two Objects 
@@ -119,3 +120,4 @@
 // var newObj = Object.assign({}, obj1)
 // newObj.c= 500
 // console.log(newObj)
+// console.log(obj1)

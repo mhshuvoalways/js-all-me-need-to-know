@@ -35,12 +35,12 @@
 
 
 // 04. String Methods
-var a = 'I am'
-var b = 'MH Shuvo'
-var c = a.concat(' ' + b)
-// // console.log(c)
+// var a = 'I am'
+// var b = 'MH Shuvo'
+// var c = a.concat(' ' + b)
+// // // console.log(c)
 // console.log(c.substr(2, 5))
-console.log(c.charAt(5))
+// console.log(c.charAt(5))
 // console.log(c.startsWith('I'))
 // console.log(c.endsWith('Shuvo'))
 // console.log(c.toUpperCase())
@@ -50,7 +50,7 @@ console.log(c.charAt(5))
 
 
 
-// Get Length of a String
+// // Get Length of a String
 // var name = 'MH Shuvo is learnig programming'
 // var length = 0
 

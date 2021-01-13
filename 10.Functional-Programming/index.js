@@ -165,12 +165,9 @@
 // 06.ForEach Function
 // step1
 // var arr = [2,4,3,4,5]
-// var sum = 0
 // arr.forEach(function(value, index, arr) {
-//     // console.log(value, index, arr)
-//     sum+=value
+//     console.log(value, index, arr)
 // })
-// console.log(sum)
 
 // step2
 // var arr = [2, 4, 3, 4, 5]
@@ -306,3 +303,190 @@
 //     return Math.max(prev, cur)
 // }, 15)
 // console.log(sum, max)
+
+
+
+
+// 10.Find and FindIndex 
+// step1
+// Find
+// var arr = [2, 4, 3, 12, 5, 6, 8, 1]
+// var result = arr.find(function (value, index, arr) {
+//     return value === 4
+// })
+// console.log(result)
+
+// FindIndex
+// var result = arr.findIndex(function (value, index, arr) {
+//     return value === 4
+// })
+// console.log(result)
+
+
+// step2
+// var arr = [2, 4, 3, 12, 5, 6, 8, 1]
+// function myFind(arr, cb) {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (cb(arr[i], i, arr)) {
+//             return arr[i]; // find
+//             // return i; //findIndex
+//         }
+//     }
+// }
+// var result = myFind(arr, function (value, index, arr) {
+//     // console.log(value, index, arr)
+//     return value % 2 === 0
+// })
+// console.log(result)
+
+
+
+
+//11. Sort, Some and Every Function Uses
+// var arr = [2, 4, -3, 12, 5, 6, -8, 1]
+// var person = [
+//     { name: 'A', age: 20 },
+//     { name: 'C', age: 15 },
+//     { name: 'B', age: 25 },
+// ]
+// arr.sort()
+// person.sort()
+// arr.sort(function (a, b) {
+//     if (a > b) {
+//         return 1
+//     } else if (a < b) {
+//         return -1
+//     } else {
+//         return 0
+//     }
+// })
+
+// person.sort(function (a, b) {
+//     if (a.age > b.age) {
+//         return 1
+//     } else if (a.age < b.age) {
+//         return -1
+//     } else {
+//         return 0
+//     }
+// })
+// console.log(arr)
+// console.log(person)
+
+
+// // every
+// var arr = [2, 4, -3, 12, 5, 6, -8, 1]
+// var result = arr.every(function (value) {
+//     return value % 2 === 0
+// })
+// console.log(result)
+
+// var result = arr.every(function (value) {
+//     return value > 0
+// })
+// console.log(result)
+
+// // some
+// var result = arr.some(function (value) {
+//     return value % 2 === 0
+// })
+// console.log(result)
+
+// var result = arr.some(function (value) {
+//     return value > 0
+// })
+// console.log(result)
+
+
+
+// 12.Return a Function from Another Function
+// function base(b) {
+//     return function (n) {
+//         var result = 1
+//         for (var i = 0; i < b; i++) {
+//             result *= n
+//         }
+//         return result
+//     }
+// }
+// console.log(base(5)(2))
+// console.log(base(4)(3))
+
+
+
+
+// 13.Recursive Function (This is a expensive function. time and memory complexity ase)
+function recursive(n) {
+    if (n === 0) {
+        return 0
+    }
+    console.log('I am calling')
+    recursive(n - 1)
+}
+recursive(10)
+
+    // function sum(n) {
+    //     if (n === 1) {
+    //         return 1
+    //     }
+    //     return n + sum(n - 1)
+    // }
+    // console.log(sum(5))
+
+// function fact(n) {
+//     if (n === 1) {
+//         return 1
+//     }
+//     return n * fact(n - 1)
+// }
+// console.log(fact(5))
+
+// var arr = [1, 2, 3, 4, 5]
+// function sumofArray(arr, lastIndex) {
+//     if(lastIndex < 0) {
+//         return 0
+//     }
+//     return arr[lastIndex] + sumofArray(arr, lastIndex - 1)
+// }
+// var result = sumofArray(arr, arr.length - 1)
+// console.log(result)
+
+
+
+
+//14. Currying 
+// function add(a, b, c) {
+//     return a + b + c
+// }
+// add(34, 36, 35)
+
+// function add(a) {
+//     return function (b) {
+//         return function (c) {
+//             return a + b + c
+//         }
+//     }
+// }
+// var res = add(4)
+// var res1 = res(3)
+// var res2 = res1(5)
+// console.log(res2)
+// console.log(add(4)(3)(5))
+
+
+
+// 15.Function Composition
+// 1st function er input akare 2nd function er output
+// function print(input) {
+//     console.log(input)
+// }
+
+// function multiply(n) {
+//     return n * 5
+// }
+
+// function add(a, b) {
+//     return a + b
+// }
+
+// print(multiply(add(3, 5)))
