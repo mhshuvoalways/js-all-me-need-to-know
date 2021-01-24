@@ -67,11 +67,11 @@
 // }
 // console.log(obj.sum(3, 7))
 
+
 // 4. We can create function as need
 // setTimeout(function () {
 //     console.log('I am creating a function')
 // }, 1000)
-
 
 
 // 3. Higer order functional
@@ -202,20 +202,8 @@
 // console.log(arr)
 // console.log(sqrArray)
 
-// // step3
-// var arr = [2, 4, 3, 4, 5]
-// function myMap(arr) {
-//     var newArray = []
-//     for (var i = 0; i < arr.length; i++) {
-//         var temp = arr[i] * arr[i]
-//         newArray.push(temp)
-//     }
-//     return newArray
-// }
-// console.log(myMap(arr))
-// console.log(arr)
 
-// step4
+// step3
 // var arr = [2, 4, 3, 4, 5]
 // function myMap(arr, cb) {
 //     var newArray = []
@@ -295,11 +283,12 @@
 //     }
 //     return acc
 // }
-// var sum = arr.reduce(function (prev, cur, index, arr) { 
+
+// var sum = myReducer(arr, function (prev, cur, index, arr) {
 //     return prev + cur
 // }, 10)
 
-// var max = arr.reduce(function(prev, cur, index, arr) {
+// var max = myReducer(arr, function (prev, cur, index, arr) {
 //     return Math.max(prev, cur)
 // }, 15)
 // console.log(sum, max)
@@ -316,7 +305,7 @@
 // })
 // console.log(result)
 
-// FindIndex
+// // FindIndex
 // var result = arr.findIndex(function (value, index, arr) {
 //     return value === 4
 // })
@@ -334,8 +323,8 @@
 //     }
 // }
 // var result = myFind(arr, function (value, index, arr) {
-//     // console.log(value, index, arr)
-//     return value % 2 === 0
+//     console.log(value, index, arr)
+//     return value === 2
 // })
 // console.log(result)
 
@@ -343,7 +332,7 @@
 
 
 //11. Sort, Some and Every Function Uses
-// var arr = [2, 4, -3, 12, 5, 6, -8, 1]
+// var arr = [2, 4, -3, 12, 5, 6, -8, -1]
 // var person = [
 //     { name: 'A', age: 20 },
 //     { name: 'C', age: 15 },
@@ -416,22 +405,22 @@
 
 
 // 13.Recursive Function (This is a expensive function. time and memory complexity ase)
-function recursive(n) {
-    if (n === 0) {
-        return 0
-    }
-    console.log('I am calling')
-    recursive(n - 1)
-}
-recursive(10)
+// function recursive(n) {
+//     if (n === 0) {
+//         return 0
+//     }
+//     console.log('I am calling')
+//     recursive(n - 1)
+// }
+// recursive(10)
 
-    // function sum(n) {
-    //     if (n === 1) {
-    //         return 1
-    //     }
-    //     return n + sum(n - 1)
-    // }
-    // console.log(sum(5))
+// function sum(n) {
+//     if (n === 1) {
+//         return 1
+//     }
+//     return n + sum(n - 1)
+// }
+// console.log(sum(5))
 
 // function fact(n) {
 //     if (n === 1) {
@@ -454,6 +443,7 @@ recursive(10)
 
 
 
+
 //14. Currying 
 // function add(a, b, c) {
 //     return a + b + c
@@ -467,11 +457,8 @@ recursive(10)
 //         }
 //     }
 // }
-// var res = add(4)
-// var res1 = res(3)
-// var res2 = res1(5)
-// console.log(res2)
 // console.log(add(4)(3)(5))
+
 
 
 
@@ -490,3 +477,10 @@ recursive(10)
 // }
 
 // print(multiply(add(3, 5)))
+
+
+
+
+
+
+// 1.recursive

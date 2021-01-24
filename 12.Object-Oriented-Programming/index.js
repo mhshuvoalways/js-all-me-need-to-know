@@ -38,6 +38,20 @@
 
 // 02.Class in OOP
 // Class is just a template of an Object
+// class Person {
+// private String name //normal state
+// public static int key  // static state
+// public Person(String name) { //constructor
+// this.name = name;
+// } 
+// public String getName() { normal method
+//     return this.name;
+// }
+// public static Person(String name) { static method
+//     return new Person(name)
+// }
+// }
+
 // class Rect {
 //     constructor(width, height) {
 //         this.width = width
@@ -168,19 +182,19 @@
 
 
 // 08. "New" Keyword: Create Your Own
-// var Rectangle = function (width, height) { //Rectangle is a constructor function, constructor pattern, class
-//     this.width = width
-//     this.height = height
+var Rectangle = function (width, height) { //Rectangle is a constructor function, constructor pattern, class
+    this.width = width
+    this.height = height
 
-//     this.draw = function () {
-//         this.printProperties()
-//     }
+    this.draw = function () {
+        this.printProperties()
+    }
 
-//     this.printProperties = function () {
-//         console.log('My width is ' + this.width)
-//         console.log('My height is ' + this.height)
-//     }
-// }
+    this.printProperties = function () {
+        console.log('My width is ' + this.width)
+        console.log('My height is ' + this.height)
+    }
+}
 
 // function myNew(constructor) {
 //     var obj = {}
@@ -253,7 +267,7 @@
 
 // 12.Pass By Value vs Pass by Reference(Call By Value vs Call by Reference) - Mutable vs Immutable
 // var n = 10
-// function passByValue(n) {
+// function passByValue(n) { //Immutable
 //     n = n + 20
 //     console.log(n)
 // }
@@ -264,7 +278,7 @@
 // var object = {
 //     a: 10
 // }
-// function passByReference(obj) {
+// function passByReference(obj) { //Mutable
 //     obj.a = obj.a + 20
 //     console.log(obj.a)
 // }
@@ -307,7 +321,7 @@
 //         x: 10
 //     }
 
-//     this.getPosotion = function () {
+//     this.getPosition = function () {
 //         return position
 //     }
 
@@ -323,7 +337,7 @@
 // }
 
 // var rect3 = new Rectangle(10, 20)
-// console.log(rect3.getPosotion())
+// console.log(rect3.getPosition())
 
 
 // var Rectangle = function () {
@@ -347,3 +361,25 @@
 //     a: 20
 // }
 // console.log(rect3.position)
+
+
+
+
+// * make myNew function
+
+
+
+
+// INHERITENCE
+// There are two type of relationship in oop.
+// 1. Is a relationship (1.Inheritence) student is a person
+// 2. Has a relationship ( 1. Aggregation 2.Composition  ) student has a department.
+// STUDENT  ------ DEPARTMENT ----------SUBJECT
+// student na thkle department cholbe tay eta 'aggregation'. but department na thkle subject thkbe na tay eta composition
+
+
+
+
+// POLYMORPHISM
+// 1. Compile time (1. constructor overloding, 2. operator overloading, 3. function overloading 4. function overriding)
+// 2. Run time

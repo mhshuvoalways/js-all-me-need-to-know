@@ -19,7 +19,7 @@
 
 // js type language na
 
-// google crome er boss ra ntoun engine make korlo jar name holo "JIT = just in time". jar moddhe Compiled interpreted 2tar mix e ase
+// google crome er boss ra ntoun engine make korlo jar name holo "JIT = just in time". jar moddhe Compiler interpreted 2tar mix e ase
 
 
 
@@ -210,7 +210,7 @@
 
 
 // 14. Closure: A Deep Look
-// * closuer is when a function is able to  remember and access its lexical scope even when that function exicuting outside its lexical scope
+// * closure is when a function is able to  remember and access its lexical scope even when that function exicuting outside its lexical scope
 
 // * closure ekta system jar maddhome amra ekta data k store kore rakhte pari and onno ekta func er vitore bebohirto ekta data jeta bayre theke asche
 

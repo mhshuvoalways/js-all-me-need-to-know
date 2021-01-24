@@ -105,8 +105,6 @@
 // }
 
 
-
-
 // Object Methods Provided
 // var obj1 = {
 //     a: 100,
@@ -117,7 +115,8 @@
 // console.log(Object.values(obj1))
 // console.log(Object.entries(obj1))
 
+
 // var newObj = Object.assign({}, obj1)
-// newObj.c= 500
+// newObj.c = 500
 // console.log(newObj)
 // console.log(obj1)

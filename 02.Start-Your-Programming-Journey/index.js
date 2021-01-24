@@ -1,5 +1,4 @@
 // 01. Hello World and code structure
-
 // console.log('Hello world')
 // console.log(75)
 // console.log('75.75')
@@ -8,8 +7,9 @@
 // console.log('9' + 9)
 
 
-// 02. variables in js
 
+
+// 02. variables in js
 // var name = 'MH Shuvo'
 // var age = '26'
 // var age = 25 // This age is working because it is bellow
@@ -19,6 +19,7 @@
 
 // console.log('This is ' + name)
 // console.log('I am ' + age + ' old')
+
 
 
 
@@ -104,8 +105,8 @@
 // 08. Null and undefined
 // var nul = null // null is special type used as a abstract of an object
 // var un = undefined
-// // var xyz = 'hi'
-// // console.log(xyz)
+// var xyz = 'hi'
+// console.log(xyz)
 // console.log(nul, un)
 
 
