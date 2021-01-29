@@ -473,7 +473,3 @@
 // mixin(GoldFish.prototype, canEat, canSwim)
 // var goldfish = new GoldFish('bla bla bla')
 // console.log(goldfish)
-
-
-
-

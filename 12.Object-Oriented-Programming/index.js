@@ -140,6 +140,7 @@
 
 //         draw: function () {
 //             this.printProperties()
+//             console.log('drawing')
 //         },
 
 //         printProperties: function () {
@@ -149,7 +150,8 @@
 //     }
 // }
 // var rect1 = createRect(10, 20)
-// rect1.draw()
+// // rect1.draw()
+// console.log(rect1)
 
 // var rect2 = createRect(11, 22)
 // rect2.draw()
@@ -182,19 +184,19 @@
 
 
 // 08. "New" Keyword: Create Your Own
-var Rectangle = function (width, height) { //Rectangle is a constructor function, constructor pattern, class
-    this.width = width
-    this.height = height
+// var Rectangle = function (width, height) { //Rectangle is a constructor function, constructor pattern, class
+//     this.width = width
+//     this.height = height
 
-    this.draw = function () {
-        this.printProperties()
-    }
+//     this.draw = function () {
+//         this.printProperties()
+//     }
 
-    this.printProperties = function () {
-        console.log('My width is ' + this.width)
-        console.log('My height is ' + this.height)
-    }
-}
+//     this.printProperties = function () {
+//         console.log('My width is ' + this.width)
+//         console.log('My height is ' + this.height)
+//     }
+// }
 
 // function myNew(constructor) {
 //     var obj = {}
@@ -317,6 +319,7 @@ var Rectangle = function (width, height) { //Rectangle is a constructor function
 // var Rectangle = function (width, height) {
 //     this.width = width
 //     this.height = height
+
 //     var position = {
 //         x: 10
 //     }
@@ -366,20 +369,3 @@ var Rectangle = function (width, height) { //Rectangle is a constructor function
 
 
 // * make myNew function
-
-
-
-
-// INHERITENCE
-// There are two type of relationship in oop.
-// 1. Is a relationship (1.Inheritence) student is a person
-// 2. Has a relationship ( 1. Aggregation 2.Composition  ) student has a department.
-// STUDENT  ------ DEPARTMENT ----------SUBJECT
-// student na thkle department cholbe tay eta 'aggregation'. but department na thkle subject thkbe na tay eta composition
-
-
-
-
-// POLYMORPHISM
-// 1. Compile time (1. constructor overloding, 2. operator overloading, 3. function overloading 4. function overriding)
-// 2. Run time

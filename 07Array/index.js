@@ -114,7 +114,7 @@
 // console.log(Array.isArray(arr))
 
 // var newArray = arr
-// arr[5] = 6
+// newArray[5] = 6
 // console.log(newArray)
 // console.log(arr)
 
@@ -122,3 +122,8 @@
 // newArray[5] = 6
 // console.log(newArray)
 // console.log(arr)
+
+
+
+
+// * reverse array
