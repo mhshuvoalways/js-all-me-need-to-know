@@ -274,11 +274,11 @@ import "./styles.css";
 // array, string, set, map these are iterable object. this is also called collection
 // iterator is nothing but an object. it return an object
 // let arr = [4, 2, 7];
-// for (var i = 0; i < arr.length; i++) {
-//     console.log(arr[i]);
-// }
+// // for (var i = 0; i < arr.length; i++) {
+// //     console.log(arr[i]);
+// // }
 
-// this is way of es5
+// // this is way of es5
 // function createIterator(collection) { // iterator interface
 //     let i = 0;
 //     return {
@@ -301,12 +301,10 @@ import "./styles.css";
 
 
 
-
 // 14. Create Iterator with ES6 Symbol.Iterator Function
 // let arr = [1, 2, 3];
 // console.log(arr[Symbol.iterator]())
-// console.log('test'[Symbol.iterator])
-
+// console.log('test'[Symbol.iterator]())
 
 // let iterator = arr[Symbol.iterator]() // Symbol.iterator is a property 
 // console.log(iterator)
@@ -317,7 +315,7 @@ import "./styles.css";
 
 // let str = 'TEXT'
 // let iteratorText = str[Symbol.iterator]()
-// console.log(iteratorText.next())
+// console.log(iteratorText)
 // console.log(iteratorText.next())
 // console.log(iteratorText.next())
 // console.log(iteratorText.next())
@@ -327,12 +325,12 @@ import "./styles.css";
 
 
 
-// 15.How does For of Loop Work
-// let arr = [4, 2, 7];
-// for(let v of arr) {
+// 15.How does for of Loop Work
+// let arr = [4, 2, 7, 3];
+// for (let v of arr) {
 //     console.log(v)
 // }
-// for(let v of 'MH Shuvo') {
+// for (let v of 'MH Shuvo') {
 //     console.log(v)
 // }
 
@@ -341,7 +339,7 @@ import "./styles.css";
 //     a: 10,
 //     b: 20
 // };
-// for(let v of object) {
+// for (let v in object) {
 //     console.log(v)
 // }
 
@@ -429,6 +427,8 @@ import "./styles.css";
 // console.log(it.next())
 
 
+
+
 // 18. Check which is Iterable
 // function isIterable(obj) {
 //     return typeof obj[Symbol.iterator] === 'function'
@@ -444,11 +444,12 @@ import "./styles.css";
 
 
 
+
 // 19. Understanding Sets collection in ES6
 // set, map is a data structure
 // data gula organized way te store korar jonno set and map use kora hoy
 // set duplicat data skip
-
+// in set we can store any primitive or objective data
 // let set = new Set([1,2, 3]) // must be array
 // set.add(4) 
 // set.add(5)
@@ -505,8 +506,8 @@ import "./styles.css";
 // normaly set use korle and tar moddhe jodi object thak tahole garbage clean hoy na mane null korle hoyna
 // let a = {a: 10}, b = {b: 20}
 // let set = new Set([a, b])
-// // a = null
-// console.log(set)
+// a = null
+// console.log(set)    
 // let arr = [...set]
 // console.log(arr)
 
@@ -526,7 +527,7 @@ import "./styles.css";
 // ])
 // a = null
 // console.log(weakMap)
-// console.log(weakMap.has(b))
+// console.log(weakMap.has('b'))
 
 
 
@@ -559,6 +560,8 @@ import "./styles.css";
 
 
 
+
+
 // 23.ES6 Class Properties
 // class Rectangle {
 //     constructor(width, height) {
@@ -582,7 +585,8 @@ import "./styles.css";
 
 
 // 24. ES6 Static Method
-// Math.random() this is     static
+// Math.random() this is static method
+
 // class Person {
 //     constructor(name, email) {
 //         this.name = name
@@ -593,10 +597,12 @@ import "./styles.css";
 //     }
 //     static createPerson(str) {
 //         let person = JSON.parse(str)
+//         console.log(person)
 //         return new Person(person.name, person.email)
 //     }
 // }
 
+// // when we dont need creating any instence or object we will use static
 // let str = '{"name": "mh shuvo", "email": "mhs@gmail.com"}'
 
 // let person = Person.createPerson(str)
@@ -607,7 +613,7 @@ import "./styles.css";
 
 // 25. "this" Property and It's Value in ES6 Class
 // 'use strict'; // this is feature of ES5
-// sudhu matro class er khetre amder jno window object na ase sey jonno ekta plugin use korte holo. but onno khete 'use strict' use korley hobe
+// sudhu matro class er khetre amder jno window object na ase sey jonno ekta plugin "@babel/plugin-transform-strict-mode" use korte holo. but onno khetre 'use strict' use korley hobe
 // function Shape() {
 //     this.draw = function () {
 //         console.log(this)
@@ -636,7 +642,7 @@ import "./styles.css";
 //     }
 // }
 
-// let circle = new Circle(2, 'CRED', 'test') 
+// let circle = new Circle(2, 'CRED', 'test')
 // console.log(circle)
 // console.log(Object.getOwnPropertyNames(circle))
 // console.log(Object.getOwnPropertySymbols(circle))
@@ -644,9 +650,7 @@ import "./styles.css";
 // console.log(circle[key])
 
 
-
 // 27.Hide Private Properties with Weak Map
-
 // const _radius = new WeakMap();
 // const _name = new WeakMap();
 // const _resize = new WeakMap();
@@ -661,16 +665,16 @@ import "./styles.css";
 //         })
 //     }
 
-//     draw() {
+//     getDraw() {
 //         console.log(_radius.get(this), _name.get(this))
 //         _resize.get(this)()
 //     }
 // }
 
 // let circle = new Circle(2, 'CRED', 100)
-// console.log(circle.draw())
+// circle.getDraw()
 
-// console.log(circle)
+
 
 
 // 28.ES6 Getter and Setter
@@ -692,8 +696,9 @@ import "./styles.css";
 // }
 
 // let circle = new Circle(2)
-// circle.radius = 100
-// console.log(circle.radius)
+// // circle.radius = 100
+// console.log(circle.radius())
+
 
 
 
@@ -778,4 +783,5 @@ import "./styles.css";
 // console.log(add(10, 5), sub(10, 5))
 
 
-// promise, async await, fetch api, async iterator, async generator
+// promise, async await, fetch api, async iterator, async generator these will be discuss in async chepter
+

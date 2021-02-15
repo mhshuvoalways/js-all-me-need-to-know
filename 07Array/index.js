@@ -41,15 +41,17 @@
 
 
 // 03. Insert, Remove and Replace Elements in an Array
-// var arr = [1, 2, 3, 4, 5, 6, 7, 8]
+var arr = [1, 9, 3, 8, 5, 2, 1, 8]
 // arr[1] = 10
 // console.log(arr)
 // arr.push(10)
 // arr.unshift(20)
 // arr.pop()
 // arr.shift()
-// arr.splice(2, 0, 12)
-// console.log(arr)
+arr.splice(2, 1, 12)
+
+// console.log(arr.slice(3, 4))
+console.log(arr)
 
 
 

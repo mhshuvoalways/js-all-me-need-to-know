@@ -16,25 +16,25 @@
 //     name: 'MH Shuvo',
 //     age: 27
 // }
-// // console.log(person)
+// console.log(person)
 
-// // for(var i in person) {
-// //     console.log(i)
-// // }
+// for(var i in person) {
+//     console.log(i)
+// }
 
-// // console.log(Object.keys(person))
+// console.log(Object.keys(person))
 
-// // var descriptor = Object.getOwnPropertyDescriptor(person, 'name')
-// // console.log(descriptor)
+// var descriptor = Object.getOwnPropertyDescriptor(person, 'name')
+// console.log(descriptor)
 
 // var baseObj = Object.getPrototypeOf(person)
 // var descriptor = Object.getOwnPropertyDescriptor(baseObj, 'toString')
 // console.log(descriptor)
 
-// Object.defineProperty(person, 'name', {
+// Object.defineProperty(baseObj, 'toString', {
 //     enumerable: false, //iterable
 //     writable: false,
-//     configurable: false,
+//     configurable: false, 
 //     value: 'mahamudul hasan shuvo'
 // })
 
@@ -54,6 +54,9 @@
 // this.name = name
 // }
 // var p1 = new Person('MH Shuvo')
+// // Person.prototype.test = function() {
+// //     console.log('test')
+// // }
 // console.log(p1)
 // console.log(Object.getPrototypeOf(p1))
 // console.log(Person.prototype)
@@ -84,7 +87,7 @@
 // Square.prototype = {
 //     draw: function () {
 //         // this.getWidth()
-//         // console.log('draw')
+//         console.log('draw')
 //     },
 //     toString: function () { //method override
 //         // return ('My width is ' + this.width)
@@ -99,12 +102,11 @@
 
 
 // 05.Iterate Object Properties and hasOwnProperty Method
-// sqr1.hasOwnProperty('width') // check own property and method in browser
-// Object.keys(sqr1) // in browser
-// for(var i in sqr1) { // if we want to get Instance or Prototype Members of an object in browser
+// console.log(sqr1.hasOwnProperty('width'))
+// console.log(Object.keys(sqr2))
+// for(var i in sqr1) {
 //     console.log(i)
 // }
-
 
 
 
@@ -294,7 +296,7 @@
 // }
 
 // function Circle() {
-   
+
 // }
 
 // extend(Shape, Circle)
@@ -394,6 +396,7 @@
 // var arr = [shape, sqr, circle]
 // for(var i of arr) {
 //    i.common()
+//    console.log(i)
 // }
 
 // // in browser
@@ -408,7 +411,7 @@
 
 // 13.Inheritance and Composition Mixing Together
 // maximum 2 level inheritance
-// // step1
+// step1
 // var canWalk = {
 //     walk: function () {
 //         console.log('Walking...')
@@ -437,6 +440,7 @@
 // step2
 // function mixin(target, ...source) { // ro
 //     Object.assign(target, ...source) // so
+//     console.log(...source)
 // }
 
 // var canWalk = {

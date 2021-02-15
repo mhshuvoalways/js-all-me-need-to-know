@@ -212,6 +212,7 @@
 
 
 
+
 //09. Constructor Property of a Constructor Function
 // constructor property holo jey func ta use kore ey object ta build kora hoyese tar ekta refference
 // protita object er sathe ekta constructor thak. new call na kora porjonto constructor call hoy na.
@@ -255,8 +256,8 @@
 //     console.log(this)
 //     console.log(this.a + this.b + c + d)
 // }
-// // myFunc({a: 10, b: 11}) //object associate
-// // myFunc.call({ a: 10, b: 11 }, 10, 5)
+// myFunc({a: 10, b: 11}) //object associate
+// myFunc.call({ a: 10, b: 11 }, 10, 5)
 // // myFunc.apply({ a: 10, b: 20 }, [5, 8])
 // var bindtest = myFunc.bind({ a: 10, b: 11 }, 10, 5)
 // bindtest()
@@ -291,11 +292,11 @@
 
 
 // 13.Hide Private Properties in Javascript
-// var Rectangle = function (width, height) {
+// var Rectangle = function (width, height, pos) {
 //     this.width = width
 //     this.height = height
 //     var position = {
-//         x: 10
+//         x: pos
 //     }
 
 //     var printProperties = function () {
@@ -309,8 +310,9 @@
 //     }
 // }
 
-// var rect3 = new Rectangle(10, 20)
+// var rect3 = new Rectangle(10, 20, 40)
 // rect3.draw()
+// console.log(rect3)
 
 
 
