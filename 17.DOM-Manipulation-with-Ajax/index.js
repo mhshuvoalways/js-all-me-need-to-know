@@ -350,3 +350,90 @@
 
 
 
+// 216-21. AJAX: How to Send Get Request and Display Data
+// let load = document.getElementById('load');
+// let posts = document.getElementById('posts');
+
+// load.addEventListener('click', function () {
+//     fetch('https://jsonplaceholder.typicode.com/posts')
+// .then(response => response.json())
+// .then(data => {
+//     // data.forEach((item, index) => {
+//     //     posts.appendChild(itemGenerator(item, index))
+//     // })
+//     data.map((item, index) => {
+//         posts.appendChild(itemGenerator(item, index))
+//     })
+// })
+// .catch(err => console.log(err))
+
+// })
+
+// function itemGenerator(item, no) {
+//     let li = document.createElement('li')
+//     li.className = 'list-group-item'
+//     li.innerHTML = `${no + 1}.  ${item.title}`
+
+//     return li
+// }
+
+
+
+
+// 217-22. AJAX: How to Send Post Request and Display Data
+// let URL = 'https://jsonplaceholder.typicode.com/posts'
+// let postForm = document.getElementById('post-form');
+// let posts = document.getElementById('posts');
+
+// postForm.addEventListener('submit', function (e) {
+//     e.preventDefault();
+
+//     let title = this.title.value || undefined;
+//     let body = this.body.value || undefined;
+
+//     if (title && body) {
+//         let obj = {
+//             userId: 100,
+//             title: title,
+//             body: body
+//         }
+//         fetch(URL, {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/JSON'
+//             },
+//             body: JSON.stringify(obj)
+//         })
+//             .then(response => response.json())
+//             .then(item => {
+//                 posts.appendChild(itemGenerator(item))
+//             })
+//             .catch(err => console.log(err))
+//     } else {
+//         alert('Please provide valid data')
+//     }
+// })
+
+// function itemGenerator(item) {
+//     let li = document.createElement('li')
+//     li.className = 'list-group-item'
+//     li.innerHTML = `${item.userId}, ${item.id}, ${item.title}, ${item.body} `
+
+//     return li
+// }
+
+
+
+
+// 218-23. Conclusion of DOM Manipulation
+// more api
+
+// Canvas
+// SVG
+// Drag and Drop
+// Transition
+// Location
+// Audio, Video
+// Speech recognition
+// Web sockets
+// Local Storage, Cookies and Browser Database
