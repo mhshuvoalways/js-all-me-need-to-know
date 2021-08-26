@@ -1,4 +1,4 @@
-// code manage korar kotha asley ekta term chole ase seta holo programming paradigm. er porey ase object oriented programming tarporeu amader kisu prolem thekey gelo sey jonnoy functional programming.
+// code manage korar kotha asley ekta term chole ase seta holo programming paradigm. er porey ase object oriented programming tarporeu amader kisu problem thekey gelo sey jonnoy functional programming.
 
 // Three main term of functional programming
 // 1. Pure functional
@@ -112,7 +112,7 @@
 //     }
 // }
 // var result = a()
-// console.dir(result())
+// console.dir(result)
 
 
 
@@ -176,6 +176,7 @@
 //         cb(arr[i], i, arr)
 //     }
 // }
+
 // var sum = 0
 // forEach(arr, function (value, index, arr) {
 //     // console.log(value, index, arr)
@@ -188,9 +189,10 @@
 // })
 
 
+
 // 07.Map Function (map function return a new array)
-// var arr = [2, 4, 3, 4, 5]
-// step1
+// var arr = [9, 4, 3, 4, 5]
+// // step1
 // arr.map(function (value, index, arr) {
 //     console.log(value, index, arr)
 // })
@@ -263,11 +265,12 @@
 
 // 09. Reduce Function
 // step1
-// var arr = [2, 4, 3, 12, 5, 6, 8, 1]
+// var arr = [2, 4, 3, 5, 6, 8, 1]
 // var sum = arr.reduce(function (prev, cur, index, arr) { 
-//     console.log(prev, cur, index, arr)
-//     // return prev + cur
+//     // console.log(prev + cur)
+//     return prev + cur
 // }, 10) //acumulator
+// console.log(sum)
 
 // var max = arr.reduce(function(prev, cur, index, arr) {
 //     return Math.max(prev, cur)
@@ -276,7 +279,7 @@
 
 
 // // step2
-// var arr = [2, 4, 3, 12, 5, 6, 8, 1]
+// var arr = [1, 2, 3, 4, 5]
 // function myReducer(arr, cb, acc) {
 //     for (var i = 0; i < arr.length; i++) {
 //         acc = cb(acc, arr[i], i, arr)
@@ -301,7 +304,7 @@
 // Find
 // var arr = [2, 4, 3, 12, 5, 6, 8, 1]
 // var result = arr.find(function (value, index, arr) {
-//     return value === 4
+//     return value === 12
 // })
 // console.log(result)
 
@@ -349,24 +352,26 @@
 //         return 0
 //     }
 // })
+// console.log(arr)
 
 // person.sort(function (a, b) {
-//     if (a.age > b.age) {
+//     if (a.name > b.name) {
 //         return 1
-//     } else if (a.age < b.age) {
+//     } else if (a.name < b.name) {
 //         return -1
 //     } else {
 //         return 0
 //     }
 // })
-// console.log(arr)
+
 // console.log(person)
 
 
 // // every
-// var arr = [2, 4, -3, 12, 5, 6, -8, 1]
+// var arr = [2, 4, 12, 5, 6, -8]
 // var result = arr.every(function (value) {
-//     return value % 2 === 0
+//     console.log(value)
+//     // return value % 2 === 0
 // })
 // console.log(result)
 

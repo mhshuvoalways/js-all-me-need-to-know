@@ -1,7 +1,7 @@
 // 01.Javascript Engine Works
 // code porbe, bujhbe and machine code a translate korbe
 // google crome 'v8', Mozila FF 'Spider monkey', Microsoft 'chakra', appler er safari holo 'javascript core'
-// Sourse code -> Parser -> Abstract window tree(Data stucture) -> Machine code -> Execution
+// Sourse code -> Parser -> Abstract window tree(Data stucture) -> Compiler -> Machine code -> Execution
 
 
 
@@ -242,7 +242,7 @@
 // for (var i = 1; i <= 5; i++) {
 //     setTimeout(function () {
 //         console.log(i)
-//     }, 1000*1)
+//     }, 1000*i)
 // }
 
 // // step 2 ey prblm ta slv korar jonno ase ifi
@@ -251,5 +251,5 @@
 //         setTimeout(function () {
 //             console.log(n)
 //         }, 1000 * n)
-//     }) (i) 
+//     }) (i)
 // }

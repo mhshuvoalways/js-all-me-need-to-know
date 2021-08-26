@@ -87,20 +87,21 @@
 // } else {
 //     console.log(false)
 // }
+// console.log(JSON.stringify(obj1))
 // console.log(JSON.stringify(obj1) === JSON.stringify(obj2))
 
 
 
-// 06. Iterate Object Properties
+// // 06. Iterate Object Properties
 // var obj1 = {
 //     a: 100,
 //     b: 200,
 //     c: 300
 // }
 // // operator
-// console.log('a' in obj1)
+// // console.log('a' in obj1)
 // for(var i in obj1) {
-//     console.log(i)
+//     // console.log(i)
 //     console.log(obj1[i])
 // }
 

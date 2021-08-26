@@ -172,40 +172,40 @@
 
 
 // step3
-// function Shape() {
+function Shape() {
 
-// }
+}
 
-// Shape.prototype = {
-//     common: function () {
-//         console.log('I am common method')
+Shape.prototype = {
+    common: function () {
+        console.log('I am common method')
+    }
+}
+
+function Square(width) {
+    this.width = width
+}
+
+Square.prototype = Object.create(Shape.prototype)
+
+// Square.prototype = { // method override. jodi amra constructor func er sathe directly equal sign dia bosay di tahole eta override hoa jabe
+//     draw: function () {
+//         console.log('Drawing')
 //     }
 // }
+Square.prototype.draw = function () {
+    console.log('Drawing')
+}
 
-// function Square(width) {
-//     this.width = width
-// }
+function Circle() {
 
-// Square.prototype = Object.create(Shape.prototype)
-
-// // Square.prototype = { // method override. jodi amra constructor func er sathe directly equal sign dia bosay di tahole eta override hoa jabe
-// //     draw: function () {
-// //         console.log('Drawing')
-// //     }
-// // }
-// Square.prototype.draw = function () {
-//     console.log('Drawing')
-// }
-
-// function Circle() {
-
-// }
-// Circle.prototype = Object.create(Shape.prototype)
+}
+Circle.prototype = Object.create(Shape.prototype)
 
 
-// var shape = new Shape()
-// var sqr = new Square(10)
-// var circle = new Circle()
+var shape = new Shape()
+var sqr = new Square(10)
+var circle = new Circle()
 
 // shape-> Shape-> Object
 // sqr-> Square-> Object
@@ -341,7 +341,7 @@
 // extend(Shape, Circle)
 
 // Circle.prototype.common = function () {
-//     Shape.prototype.common.call(this) // jodi amder parent class er prototype dorkar hoy
+//     // Shape.prototype.common.call(this) // jodi amder parent class er prototype dorkar hoy
 //     console.log('I am calling from common and overriding')
 // }
 
@@ -399,11 +399,11 @@
 //    console.log(i)
 // }
 
-// // in browser
-// // circle instanceof Circle
-// // circle instanceof Shape
-// // sqr instanceof Square
-// // sqr instanceof Shape
+// in browser
+// circle instanceof Circle
+// circle instanceof Shape
+// sqr instanceof Square
+// sqr instanceof Shape
 
 
 
@@ -411,7 +411,7 @@
 
 // 13.Inheritance and Composition Mixing Together
 // maximum 2 level inheritance
-// step1
+// // // step1
 // var canWalk = {
 //     walk: function () {
 //         console.log('Walking...')
@@ -426,7 +426,7 @@
 
 // var person = Object.assign({}, canWalk, canEat) // Object.assign es6. empty obj er sathe onno obj gula concat hoa jay.
 // person.name = 'MH Shuvo'
-// console.log(person)
+// // console.log(person)
 
 
 // function Person(name) {
@@ -438,42 +438,42 @@
 
 
 // step2
-// function mixin(target, ...source) { // ro
-//     Object.assign(target, ...source) // so
-//     console.log(...source)
-// }
+function mixin(target, ...source) { // ro
+    Object.assign(target, ...source) // so
+    console.log(...source)
+}
 
-// var canWalk = {
-//     walk: function () {
-//         console.log('Walking...')
-//     }
-// }
+var canWalk = {
+    walk: function () {
+        console.log('Walking...')
+    }
+}
 
-// var canEat = {
-//     eat: function () {
-//         console.log('Eating...')
-//     }
-// }
+var canEat = {
+    eat: function () {
+        console.log('Eating...')
+    }
+}
 
-// var canSwim = {
-//     swim: function () {
-//         console.log('Swimming...')
-//     }
-// }
+var canSwim = {
+    swim: function () {
+        console.log('Swimming...')
+    }
+}
 
-// function Person(name) {
-//     this.name = name
-// }
+function Person(name) {
+    this.name = name
+}
 
-// mixin(Person.prototype, canWalk, canEat)
+mixin(Person.prototype, canWalk, canEat)
 
-// var person = new Person('MH Shuvo')
-// console.log(person)
+var person = new Person('MH Shuvo')
+console.log(person)
 
-// function GoldFish(name) {
-//     this.name = name
-// }
+function GoldFish(name) {
+    this.name = name
+}
 
-// mixin(GoldFish.prototype, canEat, canSwim)
-// var goldfish = new GoldFish('bla bla bla')
-// console.log(goldfish)
+mixin(GoldFish.prototype, canEat, canSwim)
+var goldfish = new GoldFish('bla bla bla')
+console.log(goldfish)

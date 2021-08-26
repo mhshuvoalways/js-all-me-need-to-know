@@ -9,7 +9,6 @@
 
 
 
-
 // 196-02. Understanding The Window Object in DOM
 // parents of documents is dom
 
@@ -62,6 +61,7 @@
 // console.log(lists.constructor.name)
 
 // let ul = document.querySelector('ul') 
+// console.dir(ul)
 // console.log(ul.children)
 // console.log(ul.childNodes)
 
@@ -99,7 +99,8 @@
 // 203-09. How to Create DOM Elements
 // let li = document.createElement('li')
 // li.className = 'list-group-item'
-// li.setAttribute('title', 'I am Fourth Item')
+// // li.setAttribute('title', 'I am Fourth Item')
+// li.title = 'I am Fourth Item Another'
 // li.innerHTML = 'Four'
 // console.log(li)
 // let list = document.getElementById('list')
@@ -131,8 +132,6 @@
 
 
 
-
-
 // 204-10. Insert Created Element Using Adjacent Element
 // list.insertAdjacentElement('beforebegin', div)
 // list.insertAdjacentElement('afterbegin', div)
@@ -143,7 +142,7 @@
 
 
 // 205-11. Update and Remove any DOM Element
-// let list  = document.getElementById('list')
+// let list = document.getElementById('list')
 // let firstElemet = list.firstElementChild
 // setTimeout(function () {
 //     firstElemet.innerHTML = 'Update this Item'
@@ -186,7 +185,7 @@
 
 // 208-14. How to Work with Style in DOM
 // let title = document.getElementById('title')
-// title.style.color = 'orange' '#f00'
+// title.style.color = 'orange', '#f00'
 // title.style.color = 'rgb(255, 0, 0)'
 
 // let objStyle = {
@@ -196,7 +195,7 @@
 // }
 
 // let list = document.getElementById('list');
-// Object.assign(list.style, objStyle)
+// Object.assign(list.style, objStyle);
 // [...list.children].forEach(li => Object.assign(li.style, objStyle))
 
 
@@ -227,23 +226,22 @@
 
 
 // 210-16. Understanding Event Delegation in DOM Manipulation
-
+// let list = document.getElementById('list');
 // Event Delegation Problem
 // ;[...list.children].forEach(function (li) {
-//    li.addEventListener('click', function(e) {
-//        li.remove()
-//     //    e.target.remove()
-//     console.log(e.target)
-//    })
+//     li.addEventListener('click', function (e) {
+//         li.remove()
+//         //    e.target.remove()
+//         console.log(e.target)
+//     })
 // })
 
 // list.addEventListener('click', function (e) {
 //     if (this.contains(e.target)) {
 //         e.target.remove()
-//         console.log(e)
+//         console.dir(e.target)
 //     }
 // })
-
 
 
 
@@ -258,10 +256,13 @@
 // })
 
 
+
+
+// 212-18. Check Box Element and Event Handling
 // let skills = document.getElementsByName('skills')
 // let result = document.getElementById('result')
-// let skillsArr = [];
 
+// let skillsArr = [];
 // [...skills].forEach(function (skill) {
 //     skill.addEventListener('change', function (e) {
 //         if (e.target.checked) {
@@ -285,18 +286,15 @@
 
 
 
-
-
 // 213-18. List Item and Input Element Event Handling
 // let list = document.getElementById('list')
+
 // list.addEventListener('dblclick', function (event) {
-//     console.log(event.target.innerText)
 //     if (this.contains(event.target)) {
 //         let innerTxt = event.target.innerText
 //         event.target.innerText = ''
 //         let indexBox = createInputBox(innerTxt)
 //         event.target.appendChild(indexBox)
-
 //         indexBox.addEventListener('keypress', function (e) {
 //             if(e.key === 'Enter') {
 //                 event.target.innerText = e.target.value
@@ -319,7 +317,6 @@
 
 // 214-19. How to Handle Form Data in DOM
 // let form = document.getElementById('form');
-
 // form.addEventListener('submit', function (e) {
 //     e.preventDefault();
 //     [...this.elements].forEach(function (el) {
@@ -339,7 +336,7 @@
 // })
 
 
-// 215-20. How to Validate Form Data in DOM
+// // // 215-20. How to Validate Form Data in DOM
 // function validator(el) {
 //     if (!el.value) {
 //         return false
@@ -356,17 +353,16 @@
 
 // load.addEventListener('click', function () {
 //     fetch('https://jsonplaceholder.typicode.com/posts')
-// .then(response => response.json())
-// .then(data => {
-//     // data.forEach((item, index) => {
-//     //     posts.appendChild(itemGenerator(item, index))
-//     // })
-//     data.map((item, index) => {
-//         posts.appendChild(itemGenerator(item, index))
-//     })
-// })
-// .catch(err => console.log(err))
-
+//         .then(response => response.json())
+//         .then(data => {
+//             // data.forEach((item, index) => {
+//             //     posts.appendChild(itemGenerator(item, index))
+//             // })
+//             data.map((item, index) => {
+//                 posts.appendChild(itemGenerator(item, index))
+//             })
+//         })
+//         .catch(err => console.log(err))
 // })
 
 // function itemGenerator(item, no) {
@@ -387,7 +383,6 @@
 
 // postForm.addEventListener('submit', function (e) {
 //     e.preventDefault();
-
 //     let title = this.title.value || undefined;
 //     let body = this.body.value || undefined;
 

@@ -339,7 +339,7 @@ import "./styles.css";
 //     a: 10,
 //     b: 20
 // };
-// for (let v in object) {
+// for (let v of object) {
 //     console.log(v)
 // }
 
@@ -563,21 +563,22 @@ import "./styles.css";
 
 
 // 23.ES6 Class Properties
-// class Rectangle {
-//     constructor(width, height) {
-//         this.width = width
-//         this.height = height
-//         this.another = function() {} //jodi amra na chay j eta prototype er moddhe jak
-//     }
-//     test = function() {} //jodi amra na chay j eta prototype er moddhe jak ar eta kaz korse bcz "@babel/plugin-proposal-class-properties" dia ase tay
-//     test2 = () => {}  // eta k//jodi amra na chay j eta prototype er moddhe jak ar eta kaz korse bcz "@babel/plugin-proposal-class-properties" dia ase tay
-//     name = "rectangle"  //bayre jodi property diclare korte chay. jodi amra na chay j eta prototype er moddhe jak ar eta kaz korse bcz "@babel/plugin-proposal-class-properties" dia ase tay
-//     draw() {
-//         console.log('drawing')
-//     }
-// }
-// let rect = new Rectangle(10, 20) // class instance
-// console.log(rect)
+class Rectangle {
+    constructor(width, height) {
+        this.width = width
+        this.height = height
+        this.another = function() {} //jodi amra na chay j eta prototype er moddhe jak
+    }
+    test = function() {} //jodi amra na chay j eta prototype er moddhe jak ar eta kaz korse bcz "@babel/plugin-proposal-class-properties" dia ase tay
+    test2 = () => {}  // eta k//jodi amra na chay j eta prototype er moddhe jak ar eta kaz korse bcz "@babel/plugin-proposal-class-properties" dia ase tay
+    name = "rectangle"  //bayre jodi property diclare korte chay. jodi amra na chay j eta prototype er moddhe jak ar eta kaz korse bcz "@babel/plugin-proposal-class-properties" dia ase tay
+    draw() {
+        console.log('drawing')
+    }
+}
+
+let rect = new Rectangle(10, 20) // class instance
+console.log(rect)
 // console.log(rect.name)
 
 
@@ -765,6 +766,8 @@ import "./styles.css";
 
 //31. ES6 Module System Explained
 // for browser -> amd(befor)
+// umd -> es5
+// for nodejs -> commonjs(now)
 // for browser-> es6 (now)
 // commonjs -> nodejs
 // import Rectangle from './es6-module/Rectangle'
@@ -774,7 +777,7 @@ import "./styles.css";
 
 
 
-// import * as func from './es6-module/func'
+// import * as func from './es6-module/func' //asterisk or while card
 // console.log(func.add(10, 5))
 
 
@@ -784,4 +787,3 @@ import "./styles.css";
 
 
 // promise, async await, fetch api, async iterator, async generator these will be discuss in async chepter
-

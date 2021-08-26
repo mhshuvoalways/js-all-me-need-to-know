@@ -29,24 +29,24 @@
 // var z = 'abc'
 // var y = 'Zaz'
 // console.log(z < y)
-
 // console.log('5' == 5)
 
 
 
 // 04. String Methods
-// var a = 'I am'
-// var b = 'MH Shuvo'
-// var c = a.concat(' ' + b)
-// // // console.log(c)
+var a = 'I am'
+var b = 'MH Shuvo'
+var c = a.concat(' ' + b)
+// console.log(c)
 // console.log(c.substr(2, 5))
+// console.log(c.substring(2, 5))
 // console.log(c.charAt(5))
 // console.log(c.startsWith('I'))
 // console.log(c.endsWith('Shuvo'))
 // console.log(c.toUpperCase())
 // console.log(c.toLowerCase())
 // console.log(c.trim())
-// console.log(c.split())
+// console.log(c.split(' '))
 
 
 

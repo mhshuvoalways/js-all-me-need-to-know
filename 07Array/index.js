@@ -13,7 +13,7 @@
 
 
 // 02. Traverse an Array 
-// var arr = [3, 9, 6, 5, 2]
+// var arr = [3, 9, 6, 5, 2]    
 // //  console.log(arr)
 
 // for (var i = 0; i < arr.length; i++) {
@@ -48,10 +48,9 @@ var arr = [1, 9, 3, 8, 5, 2, 1, 8]
 // arr.unshift(20)
 // arr.pop()
 // arr.shift()
-arr.splice(2, 1, 12)
-
-// console.log(arr.slice(3, 4))
-console.log(arr)
+// console.log(arr.splice(4, 3)) // substr
+// console.log(arr.slice(3, 5)) // substring
+// console.log(arr)
 
 
 
@@ -60,7 +59,7 @@ console.log(arr)
 // var isFound = false
 
 // for (var i = 0; i < arr.length; i++) {
-//     if (arr[i] === 10) {
+//     if (arr[i] === 22) {
 //         isFound = true
 //         console.log('Data found')
 //     }
@@ -77,10 +76,10 @@ console.log(arr)
 //     [34, 43, 72, 29],
 //     [54, 34, 74, 72]
 // ]
-// // console.log(arr.length)
-// // console.log(arr)
+// console.log(arr.length)
+// console.log(arr)
 // for (var i = 0; i < arr.length; i++) {
-//     console.log(arr[i])
+//     // console.log(arr[i])
 //     for (var j = 0; j < arr[i].length; j++) {
 //         console.log('Index ' + i + ' : ' + arr[i][j])
 //     }
@@ -108,7 +107,8 @@ console.log(arr)
 // array is a mutable object
 // var arr = [1, 2, 3, 4, 5]
 // var arr2 = [3, 5, 9, 1, 5]
-// console.log(arr.join(', '))
+// console.log(arr)
+// console.log(arr.join(' ab '))
 // arr.fill(true)
 // console.log(arr)
 // var arr3 = arr.concat(arr2)

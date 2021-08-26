@@ -56,7 +56,7 @@
 //  180-04. Why does Javascript Act Like Asynchronous
 // js is a single thretend language that means process one task at a time.
 // js behind the scene 2 dhoroner kaz kore thak var and func call handler er jonno
-// js use two data structure to handle variables and function calls. 1. heap 2. stack call
+// js use two data structure to handle variables and function calls. 1. heap 2. call stack 
 // Heap to manage var and stack to manage function call
 // js engine jevabe Asynchronous task handle kore jar moddhe ase: 1.call stack 2.web api 3.event loop 4.callback/task queue. This is also data structure. 
 //js is a single thretend language but eta multi task er kaz handle kore Asynchronous sahajje
@@ -93,7 +93,7 @@
 
 
 // 183-07. How to Handle Asynchronous Operations in Javascript
-// there three way to hndle Asynchronous. 1. callback 2. promise 3. async func/ async a wait
+// There are three way to hndle Asynchronous. 1. callback 2. promise 3. async func/ async a wait
 // both 3 aynce version. handle collection on async operation . 1. async iterator 2. for await of loop 3. aynce generator
 
 
@@ -108,21 +108,21 @@
 
 // 185-09. How to Handle XMLHttpRequest(ajax) Using Callback
 // it is working just one request
-// const xhr = new XMLHttpRequest() // provided by web api because it is ajax
-// xhr.open('GET', 'https://jsonplaceholder.typicode.com/users')
+const xhr = new XMLHttpRequest() // provided by web api because it is ajax
+xhr.open('GET', 'https://www.stacklearner.com')
 
-// xhr.onreadystatechange = function (e) {
-//     if (xhr.readyState === 4) {
-//         if (xhr.status === 200) {
-//             let users = JSON.parse(xhr.responseText);
-//             // console.log(xhr.response)
-//             console.log(users)
-//         } else {
-//             console.log(xhr.status)
-//         }
-//     }
-// }
-// xhr.send()
+xhr.onreadystatechange = function (e) {
+    if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+            let users = JSON.parse(xhr.responseText);
+            // console.log(xhr.response)
+            console.log(users)
+        } else {
+            console.log(xhr.status)
+        }
+    }
+}
+xhr.send()
 
 // callback
 // function getRequest(url, callback) {
@@ -139,7 +139,6 @@
 //             }
 //         }
 //     }
-
 //     xhr.send()
 // }
 
@@ -163,8 +162,8 @@
 // function asyncMap (arr, callback) {
 //     return arr.map(v => {
 //         // setTimeout(callback(v), 0)
-//         // setTimeout(callback.bind(null, v), 0)
-//         setTimeout(() => callback(v), 0)
+//         setTimeout(callback.bind(null, v), 0)
+//         // setTimeout(() => callback(v), 0)
 //     })
 // }
 
@@ -220,7 +219,7 @@
 
 // 188-12. What is Promise, Take a Look at It(es6 or 2015 version)
 // let p1 = new Promise((resolve, reject) => {
-//     resolve('One')
+//     // resolve('One')
 //     // setTimeout(resolve, 3000, 'One')
 // })
 
@@ -255,8 +254,9 @@
 //         }, 2000)
 //     })
 // }
-// let result = getIphone(true)
-// console.log(result)
+
+// // let result = getIphone(true)
+// // console.log(result)
 // getIphone(false)
 //     .then(function (res) {
 //         console.log(res)
@@ -269,10 +269,10 @@
 
 
 // 189-13. Implement Your Own Version of Fetch API
-// fetch api return a promise
+// // fetch api return a promise
 // let BASE_URL = 'https://jsonplaceholder.typicode.com'
-// let res = fetch(`${BASE_URL}/users/1`)
-// console.log(res)
+// // let res = fetch(`${BASE_URL}/users/1`)
+// // console.log(res)
 
 // fetch(`${BASE_URL}/users/1`)
 //     .then(res => {
@@ -310,16 +310,16 @@
 //         let xhr = new XMLHttpRequest();
 //         xhr.open('GET', url)
 
-// xhr.onreadystatechange = function() {
-// if (xhr.readyState === 4) {
-//     if (xhr.status === 200) {
-//         resolve(xhr.responseText)
-//         } else {
-//             reject(new Error('Error Occurred'))
+//         xhr.onreadystatechange = function () {
+//             if (xhr.readyState === 4) {
+//                 if (xhr.status === 200) {
+//                     resolve(xhr.responseText)
+//                 } else {
+//                     reject(new Error('Error Occurred'))
+//                 }
+//             }
 //         }
-//     }
-// }
-// xhr.send();
+//         xhr.send();
 //     })
 // }
 
@@ -336,12 +336,12 @@
 
 
 // 190-14. Functionalities Came with Promise
-// const delay = s => new Promise(resolve => setTimeout(resolve, s))
-// const delay = function (s) {
-//     return new Promise(resolve => {
-//         return setTimeout(resolve, s*1000)
-//     })
-// }
+// const delay = s => new Promise(resolve => setTimeout(resolve, s*1000))
+// // const delay = function (s) {
+// //     return new Promise(resolve => {
+// //         return setTimeout(resolve, s*1000)
+// //     })
+// // }
 
 // delay(5).then(() => console.log('Five second delay'))
 // delay(2).then(() => console.log('Two second delay'))
@@ -407,6 +407,7 @@
 // let p1 = new Promise(resolve => {
 //     setTimeout(resolve, 4000, 'Test')
 // })
+
 // async function myAsyncFunc() {
 //     let v = await p1
 //     console.log('Waiting')
@@ -416,13 +417,13 @@
 
 // step4
 // async function fetchData() {
-//    try{
-//     let res = await fetch('https://jsonplaceholder.typicode.com/users')
-//     let data = await res.json() // for resolving we have to provide await keyword
-//     console.log(data)
-//    } catch (e){
-//        console.log(e)
-//    }
+//     try {
+//         let res = await fetch('https://jsonplaceholder.typicode.com/users')
+//         let data = await res.json() // for resolving we have to provide await keyword
+//         console.log(data)
+//     } catch (e) {
+//         console.log(e)
+//     }
 // }
 // fetchData()
 
@@ -528,4 +529,3 @@
 //         console.log(v)
 //     }
 // })()
-

@@ -56,13 +56,13 @@
 // console.log(1 & 0)
 // console.log(1 & 1)
 
-// Bitwise OR
+// // Bitwise OR
 // console.log(0 | 0)
 // console.log(0 | 1)
 // console.log(1 | 0)
 // console.log(1 | 1)
 
-// Bitwise XOR
+// // Bitwise XOR
 // console.log(0 ^ 0)
 // console.log(0 ^ 1)
 // console.log(1 ^ 0)
@@ -104,24 +104,7 @@
 
 
 
-// 03.Ternary Operator
-// normal
-// var a = 10
-// var result = ''
-// if (a % 2 === 0) {
-//     result = 'Even'
-// } else {
-//     result = 'Odd'
-// }
-// console.log(result)
-
-// Ternary
-// var result = a % 2 === 1 ? 'odd' : 'even'
-// console.log(result)
-
-
-
-// 04. Shorthand by logical operator
+// 03. Shorthand by logical operator
 // normal
 // var name = ''
 // var fullName = ''
@@ -139,3 +122,21 @@
 
 // var fullName = name || 'mh shuvo'
 // console.log(fullName)
+
+
+
+
+// 04.Ternary Operator
+// normal
+// var a = 10
+// var result = ''
+// if (a % 2 === 0) {
+//     result = 'Even'
+// } else {
+//     result = 'Odd'
+// }
+// console.log(result)
+
+// Ternary
+// var result = a % 2 === 1 ? 'odd' : 'even'
+// console.log(result)

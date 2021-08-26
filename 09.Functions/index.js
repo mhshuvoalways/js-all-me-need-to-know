@@ -80,7 +80,7 @@
 //     console.log(sum);
 // }
 // sumAnynumber(1, 2, 3, 4, 5)
-// sumAnynumber(1, 7, 4, 2, 1)
+// sumAnynumber(1, 7, 4, 2, 6)
 
 
 
@@ -115,7 +115,7 @@
 //     }
 // }
 // var another = addition
-// console.log(addition('mh shuvo', 'mhs@gmail.com'))
+// // console.log(addition('mh shuvo', 'mhs@gmail.com'))
 // console.log(another('mh shuvo', 'mhs@gmail.com'))
 
 

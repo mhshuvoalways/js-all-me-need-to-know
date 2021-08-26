@@ -2,7 +2,7 @@
 // error 3 ta main jinis hosse message, fileName, lineNumber
 // let i = 4
 // if (i < 10) {
-//     // throw new Error('I is smaller than 10')
+//     throw new Error('I is smaller than 10')
 //     throw new RangeError('I is smaller than 10')
 // }
 
@@ -45,7 +45,7 @@
 //         return 'Please provide a valid text'
 //     }
 // }
-// let res = makeWord(55454)
+// let res = makeWord('djhfdjfd')
 // console.log(res)
 
 
@@ -91,7 +91,7 @@
 //     console.log('I am line 1')
 //     console.log('I am line 1')
 // } catch { // jate paramiter na dia lage @babel/plugin-proposal-optional-catch-binding
-//     console.log('e.message')
+//     console.log(e.message)
 // } finally {
 //     console.log('I am finally block')
 // }

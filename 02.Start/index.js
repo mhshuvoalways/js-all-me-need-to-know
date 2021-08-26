@@ -81,7 +81,7 @@
 // var str1 = 'This is String'
 // console.log(str1)
 
-// // Number constructor
+// // String constructor
 // var str2 = String(32)
 // console.log(str2)
 
@@ -103,7 +103,7 @@
 
 
 // 08. Null and undefined
-// var nul = null // null is special type used as a abstract of an object
+// var nul = null // null is special type used as an abstract of an object
 // var un = undefined
 // var xyz = 'hi'
 // console.log(xyz)
@@ -156,7 +156,7 @@
 // 12. Math Functions Provided by Javascript
 // console.log(Math.E)
 // console.log(Math.PI)
-// var n = '5.60120'
+// var n = '5.6200'
 // console.log(n)
 // console.log(Math.abs(n))
 // console.log(Math.floor(n)) // floor and parseInt is working as same
