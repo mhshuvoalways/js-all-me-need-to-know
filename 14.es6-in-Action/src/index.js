@@ -10,7 +10,7 @@ import "./styles.css";
 // var s = `   how to
 // dfdf 
 //  dfdf  
-//         ffdf`
+//  ffdf`
 // console.log(s.trim()) // trim is es5
 
 // var name = 'MH Shuvo '

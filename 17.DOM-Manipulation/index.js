@@ -1,5 +1,5 @@
 // 195-01. Introduction to DOM - Document Object Model
-// dom is an api. jar maddhome html ekta website er bebohar ta change kore tar nam dom. it is also a tree like data structure. ey dom jey data struture ta use kore html element gula k js language use kore amader bebohar upjodi kore sey data struture er nam holo dom
+// dom is an api. jar maddhome html ekta website er bebohar ta change kore tar nam dom. it is also a tree like data structure. ey dom jey data struture ta use kore html element gula k js language use kore amader bebohar upjogi kore sey data struture er nam holo dom
 // main 4 node of dom
 // 1. element node
 // 2. text node
@@ -10,7 +10,7 @@
 
 
 // 196-02. Understanding The Window Object in DOM
-// parents of documents is dom
+// parents of documents is window
 
 
 // 197-03. Understanding The Document Object in DOM
@@ -18,8 +18,8 @@
 
 // 198-04. Basic Selectors in DOM Manipulation
 // id, class, tagName, atributeName
-// let id = document.getElementById('title');
-// console.log(id);
+// let title = document.getElementById('title');
+// console.log(title);
 
 // let className = document.getElementsByClassName('lead') // array like data structure
 // console.log(className);
@@ -38,10 +38,13 @@
 // let title = document.querySelector('#title')
 // console.log(title)
 
-// let paragraph = document.querySelector('.lead')
+// let paragraph = document.querySelector('.lead') //first element return
 // console.log(paragraph)
 
-// let paragraphs = document.querySelectorAll('li')
+// let paragraph = document.querySelectorAll('.lead') //all element return
+// console.log(paragraph)
+
+// let paragraphs = document.querySelectorAll('li') 
 // console.log(paragraphs)
 
 // let listItemOne = document.querySelector('[name^="list-item-one"]')
@@ -98,13 +101,14 @@
 
 // 203-09. How to Create DOM Elements
 // let li = document.createElement('li')
+// console.dir(li);
 // li.className = 'list-group-item'
 // // li.setAttribute('title', 'I am Fourth Item')
 // li.title = 'I am Fourth Item Another'
 // li.innerHTML = 'Four'
 // console.log(li)
 // let list = document.getElementById('list')
-// list.append(li) // append refer node
+// list.appendChild(li) // append refer node. append js er methor that is why you should use append
 
 // function createElement(tagName, className, innerHTML) {
 //     let tag = document.createElement(tagName)
@@ -147,7 +151,7 @@
 // setTimeout(function () {
 //     firstElemet.innerHTML = 'Update this Item'
 //     firstElemet.classList.add('text-success')
-//     firstElemet.style.backgroundColor = 'black'
+//     firstElemet.style.background = 'green'
 //     list.lastElementChild.remove()
 // }, 3000)
 
@@ -157,6 +161,7 @@
 // 206-12. How to Clone Node Include It's Child Elements
 // let list  = document.getElementById('list')
 // let lastElement = list.lastElementChild.cloneNode() // if provide true then clone deeply
+
 // lastElement.innerHTML = 'Four'
 // list.appendChild(lastElement)
 
@@ -227,16 +232,17 @@
 
 // 210-16. Understanding Event Delegation in DOM Manipulation
 // let list = document.getElementById('list');
-// Event Delegation Problem
+// // Event Delegation Problem
 // ;[...list.children].forEach(function (li) {
 //     li.addEventListener('click', function (e) {
-//         li.remove()
-//         //    e.target.remove()
+//         // li.remove()
+//            e.target.remove()
 //         console.log(e.target)
 //     })
 // })
 
 // list.addEventListener('click', function (e) {
+//     console.log(e.target);
 //     if (this.contains(e.target)) {
 //         e.target.remove()
 //         console.dir(e.target)
@@ -249,12 +255,11 @@
 // let name = document.getElementById('name')
 // let showName = document.getElementById('showName')
 // name.addEventListener('keypress', function (e) {
-//     if (e.key === 'Enter') {
+//     if (e.key === 'Enter' && e.target.value) {
 //         showName.append(e.target.value + ', ')
 //         e.target.value = ''
 //     }
 // })
-
 
 
 

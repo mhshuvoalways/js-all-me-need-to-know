@@ -12,24 +12,24 @@
 
 
 // 02.Property Descriptor in Javascript
-// var person = {
-//     name: 'MH Shuvo',
-//     age: 27
-// }
-// console.log(person)
+var person = {
+    name: 'MH Shuvo',
+    age: 27
+}
+console.log(person)
 
-// for(var i in person) {
-//     console.log(i)
-// }
+for(var i in person) {
+    console.log(i)
+}
 
-// console.log(Object.keys(person))
+console.log(Object.keys(person))
 
-// var descriptor = Object.getOwnPropertyDescriptor(person, 'name')
-// console.log(descriptor)
+var descriptor = Object.getOwnPropertyDescriptor(person, 'name')
+console.log(descriptor)
 
-// var baseObj = Object.getPrototypeOf(person)
-// var descriptor = Object.getOwnPropertyDescriptor(baseObj, 'toString')
-// console.log(descriptor)
+var baseObj = Object.getPrototypeOf(person)
+var descriptor = Object.getOwnPropertyDescriptor(baseObj, 'toString')
+console.log(descriptor)
 
 // Object.defineProperty(baseObj, 'toString', {
 //     enumerable: false, //iterable

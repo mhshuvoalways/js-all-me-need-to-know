@@ -34,9 +34,9 @@
 
 
 // 04. String Methods
-var a = 'I am'
-var b = 'MH Shuvo'
-var c = a.concat(' ' + b)
+// var a = 'I am'
+// var b = 'MH Shuvo'
+// var c = a.concat(' ' + b)
 // console.log(c)
 // console.log(c.substr(2, 5))
 // console.log(c.substring(2, 5))
@@ -51,11 +51,11 @@ var c = a.concat(' ' + b)
 
 
 // // Get Length of a String
-// var name = 'MH Shuvo is learnig programming'
+// var myName = 'MH Shuvo is learnig programming'
 // var length = 0
 
 // while (true) {
-//     if (name.charAt(length) === '') {
+//     if (myName.charAt(length) === '') {
 //         break;
 //     } else {
 //         length ++
@@ -63,5 +63,4 @@ var c = a.concat(' ' + b)
 // }
 
 // console.log(length)
-
-// console.log(name.length)
+// console.log(myName.length)

@@ -26,7 +26,7 @@
 
 // 03. What is Execution Context (LIFO)
 // * Context ekta container moto. Real world a ey context ta ekta object
-// * jkhn e func toyri hoy tkhn e new Execution context ba block toyri hoy
+// * Jkhn e func toyri hoy tkhn e new Execution context ba block toyri hoy
 
 // function a () {
 //     b()
@@ -48,10 +48,10 @@
 // a()
 // console.log('I am global')
 
-// excusion of c cotext   1.remove from context stack (lifo)
-// excusion of d cotext   2.remove from context stack
-// excusion of b cotext     3.remove from context stack
-// excusion of a cotext     4.remove from context stack
+// excusion of c cotext         1.remove from context stack (lifo)
+// excusion of d cotext         2.remove from context stack
+// excusion of b cotext         3.remove from context stack
+// excusion of a cotext         4.remove from context stack
 // excusion of global cotext    5.remove from context stack
 
 
@@ -59,7 +59,7 @@
 
 // 04. Creation and Execution of a Execution Context
 // creational phase (var declare, scope chain maintain, func call hobe and sathe er ekta reference rakhbe exicutional phase a)
-// exicutional phase  (j kono logical code, exicusional code excute hobe ey exicutional phase a)
+// exicutional phase (j kono logical code, exicusional code excute hobe ey exicutional phase a)
 
 
 
@@ -75,7 +75,7 @@
 // var c = 30
 
 // // creational phase
-// a = undeifned
+// a = undefined
 // b = undefined
 // c = undefined
 
@@ -95,7 +95,7 @@
 
 
 // 090. What is Hoisting Actually 
-// *kothay ekta var, func declare hosse ba kothay ekta value assign hosse eta Hoisting. Hoisting er mul goal order maintain kora
+// Kothay ekta var, func declare hosse ba kothay ekta value assign hosse eta hoisting. Hoisting er mul goal order maintain kora
 // 05, 06 jeta korlam muloto etay hoisting
 
 // var a = 100
@@ -245,11 +245,11 @@
 //     }, 1000*i)
 // }
 
-// // step 2 ey prblm ta slv korar jonno ase ifi
-// for (var i = 1; i <= 20; i++) { // looper sathe closure nia kaz korsi
-//     (function (n) {
-//         setTimeout(function () {
-//             console.log(n)
-//         }, 1000 * n)
-//     }) (i)
-// }
+// // step 2. ey prblm ta slv korar jonno ase ifi
+for (var i = 1; i <= 20; i++) { // looper sathe closure nia kaz korsi
+    (function (n) {
+        setTimeout(function () {
+            console.log(n)
+        }, 1000 * n)
+    }) (i)
+}

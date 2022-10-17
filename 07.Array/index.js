@@ -14,7 +14,7 @@
 
 // 02. Traverse an Array 
 // var arr = [3, 9, 6, 5, 2]    
-// //  console.log(arr)
+//  console.log(arr)
 
 // for (var i = 0; i < arr.length; i++) {
 //     console.log(arr[i])
@@ -41,7 +41,7 @@
 
 
 // 03. Insert, Remove and Replace Elements in an Array
-var arr = [1, 9, 3, 8, 5, 2, 1, 8]
+// var arr = [1, 9, 3, 8, 5, 2, 1, 8]
 // arr[1] = 10
 // console.log(arr)
 // arr.push(10)
@@ -76,29 +76,31 @@ var arr = [1, 9, 3, 8, 5, 2, 1, 8]
 //     [34, 43, 72, 29],
 //     [54, 34, 74, 72]
 // ]
-// console.log(arr.length)
-// console.log(arr)
+// // console.log(arr.length)
+// // console.log(arr)
 // for (var i = 0; i < arr.length; i++) {
-//     // console.log(arr[i])
+//     console.log(i)
+//     console.log(arr[i])
 //     for (var j = 0; j < arr[i].length; j++) {
+//         console.log(j);
+//         console.log(arr[i][j]);
 //         console.log('Index ' + i + ' : ' + arr[i][j])
 //     }
 // }
 
 
 
-// 06.Reverse Array Elements Completely
+// // 06.Reverse Array Elements Completely
 // var arr = [1, 2, 3, 4, 5]
 
 // for (var i = 0; i < arr.length / 2; i++) {
 //     // console.log(arr[i])
 //     var temp = arr[i]
 //     arr[i] = arr[arr.length - 1 - i]
-//     // console.log(arr[i])
+//     console.log(arr[i])
 //     arr[arr.length - 1 - i] = temp
 // }
 // console.log(arr)
-
 // console.log(arr.reverse())
 
 
@@ -108,7 +110,7 @@ var arr = [1, 9, 3, 8, 5, 2, 1, 8]
 // var arr = [1, 2, 3, 4, 5]
 // var arr2 = [3, 5, 9, 1, 5]
 // console.log(arr)
-// console.log(arr.join(' ab '))
+// console.log(arr.join('ab, '))
 // arr.fill(true)
 // console.log(arr)
 // var arr3 = arr.concat(arr2)

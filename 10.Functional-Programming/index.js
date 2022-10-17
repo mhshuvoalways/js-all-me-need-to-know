@@ -56,6 +56,7 @@
 // var sum = add
 // var arr = []
 // arr.push(sum)
+// console.log(arr)
 // console.log(arr[0](5, 3))
 
 // 3. A function can be stored in an object
@@ -97,7 +98,7 @@
 
 // }
 
-// var result = manipulate(3, 4, add)
+// var result = manipulate(4, 2, add)
 // console.log(result())
 
 
@@ -106,13 +107,12 @@
 // var b = 10
 // function a() {
 //     console.log(b)
-//     var x = 20
+//     var b = 20
 //     return function () {
-//         console.log(x)
+//         console.log(b)
 //     }
 // }
-// var result = a()
-// console.dir(result)
+// a()
 
 
 
@@ -265,9 +265,9 @@
 
 // 09. Reduce Function
 // step1
-// var arr = [2, 4, 3, 5, 6, 8, 1]
+// var arr = [1, 2, 3,4, 5]
 // var sum = arr.reduce(function (prev, cur, index, arr) { 
-//     // console.log(prev + cur)
+//     // console.log(prev)
 //     return prev + cur
 // }, 10) //acumulator
 // console.log(sum)
@@ -409,7 +409,7 @@
 
 
 
-// 13.Recursive Function (This is a expensive function. time and memory complexity ase)
+// 13.Recursive Function (This is a expensive function. Time and memory complexity ase)
 // function recursive(n) {
 //     if (n === 0) {
 //         return 0

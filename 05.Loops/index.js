@@ -1,5 +1,5 @@
 // There are three different patterns of for loop. 
-// for loop, for in, for of loop
+// for loop, for in loop, for of loop
 
 // 01. For Loop
 // There are three different types of for loop. 
@@ -47,6 +47,7 @@
 //     i++
 // }
 
+
 // isRunning = true;
 // while (isRunning) {
 //     var rand = Math.floor(Math.random() * 10 + 1)
@@ -82,7 +83,8 @@
 // var n = 6
 // for (var i = 1; i <= n; i++) {
 //     var result = ''
-//     for (var j = 1; j <= n; j++) {
+//     for (var j = 1; j <= i; j++) {
+//         console.log(j);
 //         result = result + ' *'
 //     }
 //     console.log(result)
