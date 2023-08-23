@@ -726,8 +726,8 @@ console.log(rect)
 //         return this.width * this.height
 //     }
 // }
-// let rect = new Rectangle('blue', 4, 5)
-// console.log(rect)
+// let rect5 = new Rectangle('blue', 4, 5)
+// console.log(rect5)
 
 
 

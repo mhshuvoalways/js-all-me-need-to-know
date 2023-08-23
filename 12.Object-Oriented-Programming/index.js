@@ -74,7 +74,7 @@
 
 // 03.Four Main Pillars of OOP
 // 1. Abstraction (Hiding unnecessery details)
-// 2. Encapsulation (Bunding Data and Method)
+// 2. Encapsulation (Bundling Data and Method)
 // 3. Inheritence
 // 4. Polymorphism
 

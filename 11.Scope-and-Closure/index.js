@@ -3,11 +3,8 @@
 // google crome 'v8', Mozila FF 'Spider monkey', Microsoft 'chakra', appler er safari holo 'javascript core'
 // Sourse code -> Parser -> Abstract window tree(Data stucture) -> Compiler -> Machine code -> Execution
 
-
-
-
 // 02.Compiled vs Interpreted
-// Compiled 
+// Compiled
 // * ekta file create hoy puro code er jonno and run hoy
 // * Time kom lage excusion hote
 // * debuging a problem
@@ -20,9 +17,6 @@
 // js type language na
 
 // google crome er boss ra ntoun engine make korlo jar name holo "JIT = just in time". jar moddhe Compiler interpreted 2tar mix e ase
-
-
-
 
 // 03. What is Execution Context (LIFO)
 // * Context ekta container moto. Real world a ey context ta ekta object
@@ -54,16 +48,9 @@
 // excusion of a cotext         4.remove from context stack
 // excusion of global cotext    5.remove from context stack
 
-
-
-
 // 04. Creation and Execution of a Execution Context
 // creational phase (var declare, scope chain maintain, func call hobe and sathe er ekta reference rakhbe exicutional phase a)
 // exicutional phase (j kono logical code, exicusional code excute hobe ey exicutional phase a)
-
-
-
-
 
 // 05. How does Variable Object Works
 // var a = 10
@@ -83,8 +70,6 @@
 // a = 10
 // b = 20
 
-
-
 // 06. Execution Context and Function
 // abc() //creational phase
 // function abc() {
@@ -92,14 +77,12 @@
 // }
 // abc() //creational phase
 
-
-
-// 090. What is Hoisting Actually 
+// 090. What is Hoisting Actually
 // Kothay ekta var, func declare hosse ba kothay ekta value assign hosse eta hoisting. Hoisting er mul goal order maintain kora
 // 05, 06 jeta korlam muloto etay hoisting
 
 // var a = 100
-// // newPrint(a)
+// newPrint(a)
 // print(20)
 // var newPrint = print
 // newPrint(45)
@@ -108,18 +91,14 @@
 // }
 // print(a)
 
-// // creational phase 
-// a  = undefined 
-// newPrint = undefined 
+// // creational phase
+// a  = undefined
+// newPrint = undefined
 // print = ref
 
 // // excutional phase
 // a = 100
 // newPrint = ref
-
-
-
-
 
 // 10. Function Declaration vs Expression: What is The Difference
 // abc()
@@ -133,26 +112,21 @@
 // }
 // newabc()
 
-// // creational phase 
+// // creational phase
 // // abc = ref
 // // newabc = undefined
 
 // // excutional phase
 
-
-
-
 // 11. Scope: A Deep Look
 // {
 //     var x = 10
 //     function a() {
-//         // var x = 10 // jodi eta na thak tkhn bayre jabe
+//         // var x = 20 // jodi eta na thak tkhn bayre jabe
 //         console.log(x)
 //     }
 //     a()
 // }
-
-
 
 // 11. What is Nested Scope
 // var x = 10
@@ -160,7 +134,7 @@
 //     var x = 20 // jodi eta na thak tkhn bayre jabe
 //     console.log(x)
 //     function nested() {
-//         // var y = 20
+//         // var x = 40
 //         console.log(x)
 //     }
 //     // console.log(y)
@@ -168,13 +142,8 @@
 // }
 // a()
 
-
-
 // 12. What is Lexical Scope in Javascript
 // soto soto akare vag hoa compiler er kase jasse etay holo lexical scope. k kotha thke access nite parbe etay lexical scope
-
-
-
 
 // 13. Scope Chain
 // Kon kon func er moddhe kon kon var er access ase etay holo scope chain
@@ -206,9 +175,6 @@
 // ( C )-> a, b, d, B(), C(), D()
 // ( D )-> a, n, A()
 
-
-
-
 // 14. Closure: A Deep Look
 // * closure is when a function is able to  remember and access its lexical scope even when that function exicuting outside its lexical scope
 
@@ -234,9 +200,6 @@
 // var sayMsz = test()
 // sayMsz()
 
-
-
-
 // 15. Closure and Loops Tied Together
 // // step 1. eta ekta prblm create kore tay step 2 nia kaz korte hobe
 // for (var i = 1; i <= 5; i++) {
@@ -246,10 +209,10 @@
 // }
 
 // // step 2. ey prblm ta slv korar jonno ase ifi
-for (var i = 1; i <= 20; i++) { // looper sathe closure nia kaz korsi
-    (function (n) {
-        setTimeout(function () {
-            console.log(n)
-        }, 1000 * n)
-    }) (i)
-}
+// for (var i = 1; i <= 20; i++) { // looper sathe closure nia kaz korsi
+//     (function (n) {
+//         setTimeout(function () {
+//             console.log(n)
+//         }, 1000 * n)
+//     }) (i)
+// }

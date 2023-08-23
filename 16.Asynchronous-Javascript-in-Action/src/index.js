@@ -108,21 +108,21 @@
 
 // 185-09. How to Handle XMLHttpRequest(ajax) Using Callback
 // it is working just one request
-const xhr = new XMLHttpRequest() // provided by web api because it is ajax
-xhr.open('GET', 'https://www.stacklearner.com')
+// const xhr = new XMLHttpRequest() // provided by web api because it is ajax
+// xhr.open('GET', 'https://www.stacklearner.com')
 
-xhr.onreadystatechange = function (e) {
-    if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-            let users = JSON.parse(xhr.responseText);
-            // console.log(xhr.response)
-            console.log(users)
-        } else {
-            console.log(xhr.status)
-        }
-    }
-}
-xhr.send()
+// xhr.onreadystatechange = function (e) {
+//     if (xhr.readyState === 4) {
+//         if (xhr.status === 200) {
+//             let users = JSON.parse(xhr.responseText);
+//             // console.log(xhr.response)
+//             console.log(users)
+//         } else {
+//             console.log(xhr.status)
+//         }
+//     }
+// }
+// xhr.send()
 
 // callback
 // function getRequest(url, callback) {

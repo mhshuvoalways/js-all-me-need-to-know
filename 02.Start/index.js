@@ -138,8 +138,8 @@
 // console.log(Boolean(undefined))
 
 // console.log(true)
-var x = false
-console.log(x.toString())
+// var x = false
+// console.log(x.toString())
 
 // constructor -> String, Number, Boolean, Object
 

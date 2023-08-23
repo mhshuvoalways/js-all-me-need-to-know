@@ -12,24 +12,24 @@
 
 
 // 02.Property Descriptor in Javascript
-var person = {
-    name: 'MH Shuvo',
-    age: 27
-}
-console.log(person)
+// var person = {
+//     name: 'MH Shuvo',
+//     age: 27
+// }
+// console.log(person)
 
-for(var i in person) {
-    console.log(i)
-}
+// for(var i in person) {
+//     console.log(i)
+// }
 
-console.log(Object.keys(person))
+// console.log(Object.keys(person))
 
-var descriptor = Object.getOwnPropertyDescriptor(person, 'name')
-console.log(descriptor)
+// var descriptor = Object.getOwnPropertyDescriptor(person, 'name')
+// console.log(descriptor)
 
-var baseObj = Object.getPrototypeOf(person)
-var descriptor = Object.getOwnPropertyDescriptor(baseObj, 'toString')
-console.log(descriptor)
+// var baseObj = Object.getPrototypeOf(person)
+// var descriptor2 = Object.getOwnPropertyDescriptor(baseObj, 'toString')
+// console.log(descriptor2)
 
 // Object.defineProperty(baseObj, 'toString', {
 //     enumerable: false, //iterable
@@ -50,13 +50,13 @@ console.log(descriptor)
 
 
 // 03.Constructor Prototype Object of Any Constructor Function
-// function Person(name) { // protita constructor function er sathe ekta property ase jar nam prototype. eta change korte pari and extend korte pari
-// this.name = name
+function Person(name) { // protita constructor function er sathe ekta property ase jar nam prototype. eta change korte pari and extend korte pari
+this.name = name
+}
+var p1 = new Person('MH Shuvo')
+// Person.prototype.test = function() {
+//     console.log('test')
 // }
-// var p1 = new Person('MH Shuvo')
-// // Person.prototype.test = function() {
-// //     console.log('test')
-// // }
 // console.log(p1)
 // console.log(Object.getPrototypeOf(p1))
 // console.log(Person.prototype)
@@ -172,40 +172,40 @@ console.log(descriptor)
 
 
 // step3
-function Shape() {
+// function Shape() {
 
-}
+// }
 
-Shape.prototype = {
-    common: function () {
-        console.log('I am common method')
-    }
-}
+// Shape.prototype = {
+//     common: function () {
+//         console.log('I am common method')
+//     }
+// }
 
-function Square(width) {
-    this.width = width
-}
+// function Square(width) {
+//     this.width = width
+// }
 
-Square.prototype = Object.create(Shape.prototype)
+// Square.prototype = Object.create(Shape.prototype)
 
 // Square.prototype = { // method override. jodi amra constructor func er sathe directly equal sign dia bosay di tahole eta override hoa jabe
 //     draw: function () {
 //         console.log('Drawing')
 //     }
 // }
-Square.prototype.draw = function () {
-    console.log('Drawing')
-}
+// Square.prototype.draw = function () {
+//     console.log('Drawing')
+// }
 
-function Circle() {
+// function Circle() {
 
-}
-Circle.prototype = Object.create(Shape.prototype)
+// }
+// Circle.prototype = Object.create(Shape.prototype)
 
 
-var shape = new Shape()
-var sqr = new Square(10)
-var circle = new Circle()
+// var shape = new Shape()
+// var sqr = new Square(10)
+// var circle = new Circle()
 
 // shape-> Shape-> Object
 // sqr-> Square-> Object
@@ -438,42 +438,42 @@ var circle = new Circle()
 
 
 // step2
-function mixin(target, ...source) { // ro
-    Object.assign(target, ...source) // so
-    console.log(...source)
-}
+// function mixin(target, ...source) { // ro
+//     Object.assign(target, ...source) // so
+//     console.log(...source)
+// }
 
-var canWalk = {
-    walk: function () {
-        console.log('Walking...')
-    }
-}
+// var canWalk = {
+//     walk: function () {
+//         console.log('Walking...')
+//     }
+// }
 
-var canEat = {
-    eat: function () {
-        console.log('Eating...')
-    }
-}
+// var canEat = {
+//     eat: function () {
+//         console.log('Eating...')
+//     }
+// }
 
-var canSwim = {
-    swim: function () {
-        console.log('Swimming...')
-    }
-}
+// var canSwim = {
+//     swim: function () {
+//         console.log('Swimming...')
+//     }
+// }
 
-function Person(name) {
-    this.name = name
-}
+// function Person(name) {
+//     this.name = name
+// }
 
-mixin(Person.prototype, canWalk, canEat)
+// mixin(Person.prototype, canWalk, canEat)
 
-var person = new Person('MH Shuvo')
-console.log(person)
+// var person = new Person('MH Shuvo')
+// console.log(person)
 
-function GoldFish(name) {
-    this.name = name
-}
+// function GoldFish(name) {
+//     this.name = name
+// }
 
-mixin(GoldFish.prototype, canEat, canSwim)
-var goldfish = new GoldFish('bla bla bla')
-console.log(goldfish)
+// mixin(GoldFish.prototype, canEat, canSwim)
+// var goldfish = new GoldFish('bla bla bla')
+// console.log(goldfish)
